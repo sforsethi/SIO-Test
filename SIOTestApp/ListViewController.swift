@@ -37,6 +37,8 @@ extension ListViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let  cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ListCell", for: indexPath) as! ListCell
         cell.nameLabel.text = list[indexPath.row].name
+        cell.experience.text = "\(list[indexPath.row].experience) YEARS"
+        cell.occupation.text = list[indexPath.row].occupation
         return cell
     }
     
