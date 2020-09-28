@@ -1,0 +1,6 @@
+framework module Pods_SIOTestApp_SIOTestAppUITests {
+  umbrella header "Pods-SIOTestApp-SIOTestAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
